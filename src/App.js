@@ -1,12 +1,29 @@
+import 'bulma/css/bulma.css';
+import MyForm from './components/MyForm';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p> testing.. 1...2...3... starting my react project</p>
-      </header>
+function App() {  
+// CSS: Bulma columns to position the form in the middle.
+  return(   
+  <>
+    <div>
+      <div class="columns">
+        <div class="column is-4">
+        </div>
+        <div class="column is-4">
+
+          <MyForm />
+          
+        </div>
+        <div class="column is-4">
+        </div>
+        
+      </div>
     </div>
-  );
+   
+ 
+    
+  </>
+)
 }
 
 export default App;
